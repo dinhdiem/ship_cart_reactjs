@@ -6,11 +6,11 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <div>
+    <div className="mx-5">
       <div className="grid grid-cols-6 gap-8 py-5">
         <div className="logo col-span-1">
           <NavLink
-            className="text-[30px] leading-[60px] md:py-5 font-barlow font-bold uppercase ml-[50px]"
+            className="text-[30px] leading-[60px] md:py-5 font-barlow font-bold uppercase"
             to={"/"}
           >
             Shopping Cart
@@ -22,7 +22,7 @@ const Header = (props: Props) => {
               <NavLink className="hover:border-b-2 hover:border-red-700" to={"/"}>Home</NavLink>
             </li>
             <li>
-              <NavLink className="hover:border-b-2 hover:border-red-700" to={"/product"}>Product</NavLink>
+              <NavLink className="hover:border-b-2 hover:border-red-700" to={"/products"}>Product</NavLink>
             </li>
             <li>
               <NavLink className="hover:border-b-2 hover:border-red-700" to={"/about"}>About</NavLink>
